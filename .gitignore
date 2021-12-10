@@ -1,6 +1,7 @@
 /.vs
 /packages
-/ExampleApp
+/StartHere/bin
+/StartHere/obj
 /Examples/bin
 /Examples/obj
 /UngerboeckSDKWrapper/bin
