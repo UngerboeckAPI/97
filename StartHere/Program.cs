@@ -13,6 +13,7 @@ namespace StartHere
       string secret;
       string key;
 
+       
       ungerboeckURI = "https://YourUngerboeckSite.ungerboeck.com";      
       apiUserId = "SOMEAPIID"; //This is the API User ID value found on the API User details window.
       secret = "4YYhf4ea-1b2c-4ecf-DS45-44ba766d6b89"; //This is the Secret value found on the API User details window.  It is a GUID.
@@ -31,7 +32,9 @@ namespace StartHere
 
       var client = new Ungerboeck.Api.Sdk.ApiClient(auth);
 
-      var account = client.Endpoints.Accounts.Get("10", "ACCTCODE");
+      var examples = new Examples.Operations.Accounts(client); //You can and should call the sdk directly in your app, but this is just showing how to use our example demos      
+
+      var account = examples.Get("10", "ACCTCODE");
 
       Console.WriteLine($"The account name is {account.Name}");
     }
