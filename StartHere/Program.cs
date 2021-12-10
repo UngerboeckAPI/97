@@ -18,6 +18,8 @@ namespace StartHere
       secret = "4YYhf4ea-1b2c-4ecf-DS45-44ba766d6b89"; //This is the Secret value found on the API User details window.  It is a GUID.
       key = "648dfF62-2724-4098-82b9-7457b89c7247e"; //This is any one of the Key values found on the API User details window in the Keys section.  It is a GUID.
 
+      if (ungerboeckURI == "https://YourUngerboeckSite.ungerboeck.com") throw new Exception("Please start by modifying the API User info in StartHere/Program.cs");
+
       var auth = new Ungerboeck.Api.Models.Authorization.Jwt
       {
         APIUserID = apiUserId,
