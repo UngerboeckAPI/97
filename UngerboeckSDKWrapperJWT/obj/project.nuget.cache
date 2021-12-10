@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "QSrjdOhmqH0BDFjpAiB8bLwbDR9fsPcfDrLLU6meTvR+2QzyUTyvPf5sdWs1i/lx6MzFn2nqsktrpCiSvN1I5Q==",
+  "success": true,
+  "projectFilePath": "C:\\DevProjects\\Releases\\UngerboeckSDK\\97\\UngerboeckSDKWrapperJWT\\UngerboeckSDKWrapperJWT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.0\\microsoft.identitymodel.jsonwebtokens.6.12.0.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.0\\microsoft.identitymodel.logging.6.12.0.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.0\\microsoft.identitymodel.tokens.6.12.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.0\\system.identitymodel.tokens.jwt.6.12.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\rudy.scoggins\\.nuget\\packages\\ungerboeck.api.models\\1.97.211206.1756\\ungerboeck.api.models.1.97.211206.1756.nupkg.sha512"
+  ],
+  "logs": []
+}
