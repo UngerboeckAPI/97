@@ -4,10 +4,10 @@
 /StartHere/obj
 /Examples/bin
 /Examples/obj
-/UngerboeckSDKWrapper/bin
-/UngerboeckSDKWrapper/obj
-/UngerboeckSDKWrapper/.vs
-/UngerboeckSDKPackage.dll
+/UngerboeckSDKWrapperJWT/bin
+/UngerboeckSDKWrapperJWT/obj
+/UngerboeckSDKWrapperJWT/.vs
+/Ungerboeck.Api.Models.dll
 Ungerboeck.png
 *.nuspec
 *.nupkg
