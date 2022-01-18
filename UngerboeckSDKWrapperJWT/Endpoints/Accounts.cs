@@ -90,7 +90,7 @@ namespace Ungerboeck.Api.Sdk.Endpoints
     /// <param name="options">This contains optional configurations.</param>
     /// <returns>A newly added, single model for this subject.</returns>
     public AllAccountsModel Add(AllAccountsModel model, Ungerboeck.Api.Models.Options.Subjects.Accounts options = null)
-    {      
+    { 
       return AddSync(model, options);
     }
 
@@ -102,9 +102,33 @@ namespace Ungerboeck.Api.Sdk.Endpoints
     /// <returns>A newly added, single model for this subject.</returns>
     public Task<AllAccountsModel> AddAsync(AllAccountsModel model, Ungerboeck.Api.Models.Options.Subjects.Accounts options = null)
     {
-      SetValidation(options?.BlockDuplicateAccounts, ValidationCodes.BlockDuplicateAccounts);
-
       return base.AddAsync(model, options);
+    }
+
+    /// <summary>
+    /// You can do multiple save operations in one transaction.  See the API Help sandbox for a list of what has Bulk.
+    /// </summary>
+    /// <param name="bulkRequestModel">This contains the list of bulk items, as well as the choice to continue on failure of a save.</param>
+    /// <returns>BuldResponseModel, containing the results of the bulk process</returns>
+    public Ungerboeck.Api.Models.Bulk.BulkResponseModel Bulk(Ungerboeck.Api.Models.Bulk.BulkRequestModel bulkRequestModel, Ungerboeck.Api.Models.Options.Subjects.Accounts options = null)
+    {
+      return base.BulkSync(bulkRequestModel, options);
+    }
+
+    /// <summary>
+    /// You can do multiple save operations in one transaction.  See the API Help sandbox for a list of what has Bulk.
+    /// </summary>
+    /// <param name="bulkRequestModel">This contains the list of bulk items, as well as the choice to continue on failure of a save.</param>
+    /// <returns>BuldResponseModel, containing the results of the bulk process</returns>
+    public Task<Ungerboeck.Api.Models.Bulk.BulkResponseModel> BulkAsync(Ungerboeck.Api.Models.Bulk.BulkRequestModel bulkRequestModel, Ungerboeck.Api.Models.Options.Subjects.Accounts options = null)
+    {
+      return base.BulkAsync(bulkRequestModel, options);
+    }
+
+    protected override void CollectValidationOverridesFromOptions(ref List<int> validationOverrides, Dictionary<string, string> headers, Ungerboeck.Api.Models.Options.Base baseOptions)
+    {
+      var options = GetOptions<Models.Options.Subjects.Accounts>(baseOptions);
+      SetValidation(validationOverrides, options?.BlockDuplicateAccounts, ValidationCodes.BlockDuplicateAccounts);
     }
   }
 }
