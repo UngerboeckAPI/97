@@ -14,14 +14,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Examples\Examples.csproj" />
-    <ProjectReference Include="..\UngerboeckSDKWrapperJWT\UngerboeckSDKWrapperJWT.csproj" />
+    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220117.1836" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Ungerboeck.Api.Models">
-      <HintPath>..\..\..\Bin\netstandard2.0\Ungerboeck.Api.Models.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Examples\Examples.csproj" />
+    <ProjectReference Include="..\UngerboeckSDKWrapperJWT\UngerboeckSDKWrapperJWT.csproj" />
   </ItemGroup>
 
 </Project>

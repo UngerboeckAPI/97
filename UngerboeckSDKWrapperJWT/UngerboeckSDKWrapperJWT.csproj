@@ -30,10 +30,7 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.12.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\UngerboeckSDKPackage\UngerboeckSDKPackageJWT\UngerboeckSDKPackageJWT.vbproj" />
+    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220117.1836" />
   </ItemGroup>
 
 </Project>
