@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220117.1836" />
+    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220119.1326" />
   </ItemGroup>
 
   <ItemGroup>
