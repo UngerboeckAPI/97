@@ -21,6 +21,12 @@
     <PackageTags>Ungerboeck USI SDK API Model Models Endpoints</PackageTags>
   </PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">		
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\..\..\..\..\certificate\UngerboeckApi.snk</AssemblyOriginatorKeyFile>
+		<DelaySign>false</DelaySign>
+	</PropertyGroup>
+
   <ItemGroup>
     <None Remove="Ungerboeck.png" />
   </ItemGroup>
@@ -30,7 +36,7 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.12.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.0" />
-    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220119.1326" />
+    <PackageReference Include="Ungerboeck.Api.Models" Version="1.97.220316.1317" />
   </ItemGroup>
 
 </Project>
